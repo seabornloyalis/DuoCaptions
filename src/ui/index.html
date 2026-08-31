@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'">
+  <title>DuoCaptions</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header><span class="mark">DC</span><div><h1>DuoCaptions</h1><p>Two languages. One subtitle track.</p></div></header>
+    <section class="card">
+      <span class="step">01 · VIDEO</span>
+      <h2>Choose an MKV file</h2>
+      <button id="choose-video" class="secondary">Browse for video</button>
+      <p id="video-path" class="path">No video selected</p>
+    </section>
+    <section id="track-form" class="card" hidden>
+      <span class="step">02 · LANGUAGES</span>
+      <h2>Select subtitle tracks</h2>
+      <label>Language one <small>Ochre · upper line</small><select id="first-track"></select></label>
+      <label>Language two <small>White · lower line</small><select id="second-track"></select></label>
+      <button id="create" disabled>Create bilingual MKV</button>
+    </section>
+    <pre id="status" aria-live="polite"></pre>
+  </main>
+  <script type="module" src="../../dist/ui/renderer.js"></script>
+</body>
+</html>

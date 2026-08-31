@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.srt
+*.ass
+*.ssa
+*.vtt
+*.sub
+*.sup

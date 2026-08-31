@@ -1,0 +1,25 @@
+{
+  "name": "duocaptions",
+  "version": "0.1.0",
+  "description": "Interactively inspect and export subtitle tracks from MKV files.",
+  "type": "module",
+  "bin": {
+    "duocaptions": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "ui": "npm run build && electron dist/ui/main.js",
+    "dev": "tsx src/cli.ts",
+    "test": "npm run build && node --test dist/**/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "electron": "^37.4.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
